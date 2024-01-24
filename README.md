@@ -11,8 +11,8 @@ Terraform cloud have free tier - 500 resource per month. The next resorces over 
 ## Usage
 ```hcl
 //Configuration to call the module
-module "eks-addons" {
-  source                      = "github.com/dedicatted/terraform-aws-eks-addons"
+module "cloud_init" {
+  source                      = "github.com/dedicatted/terraform-cloud"
   tfcloud_token_token         = "terraform_cloud_token"
   tfcloud_oauth_token         = "git_hub_token"
   vcs_repo_name               = "organization_name/repo_name"
